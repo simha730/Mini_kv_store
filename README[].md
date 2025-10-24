@@ -9,11 +9,11 @@
   * `write` : 4
   * `accept`: 2
 
-* **Test duration:** 25 seconds under concurrent load
+* **Test duration:** 177 seconds under concurrent load
 * **Syscalls observed (kvstore_client.c):**
 
-  * `read`  : 1
-  * `write` : 1
+  * `read`  : 6
+  * `write` : 11
   * `accept`: 0
 
 * **Observations:**
@@ -78,3 +78,4 @@ ps aux | grep kvstore_server_mt
 * This report **excludes server/client code**.
 * Designed to show **system behavior under different loads** and **bottleneck analysis**.
 * Provides insights for **optimizing thread-based key-value store** performance.
+
